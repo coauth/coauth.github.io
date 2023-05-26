@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -135,7 +135,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgb(7, 71, 166, 0.9);
+  background: rgb(7, 71, 166, 0.99);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #header .logo {
@@ -428,7 +429,7 @@ h6 {
 }
 
 #home .btn-get-started {
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -449,7 +450,7 @@ h6 {
 
 
 #home .btn-github {
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -580,8 +581,6 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -618,7 +617,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding: 12px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -677,7 +676,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -750,7 +749,7 @@ section {
 .why-us .accordion-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -834,7 +833,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   color: #0747A6;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .skills .content ul {
@@ -869,7 +868,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #0747A6;
 }
 
@@ -939,7 +938,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgb(7, 71, 166,0.9), rgb(7, 71, 166, 0.5)), url("../img/cta-bg2.jfif") fixed center center;
+  background: linear-gradient(rgb(7, 71, 166,0.9), rgb(7, 71, 166, 0.9)), url("../img/coauth-logo-square.png") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -955,7 +954,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1006,7 +1005,7 @@ section {
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1270,7 +1269,7 @@ section {
   font-size: 48px;
   color: #0747A6;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 25px;
 }
 
@@ -1325,7 +1324,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: 0.3s;
   border: 1px solid #47b2e4;
 }
@@ -1395,7 +1394,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1768,7 +1767,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #5e5e5e;
 }
 
