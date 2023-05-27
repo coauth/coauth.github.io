@@ -1,11 +1,11 @@
 # coauth.github.io
-This is the primary website hosting CO-Auth Organization
+This repository host web page that points to the apex / root domain (i.e. www.coauth.dev) for CO-Auth Organization.
 
 ## Status:
 Live
 
 ## Contribution
-Refer to Documentation
+Refer to Documentation available on website
 
 ## Code of Conduct
-Refer to Documentation
+Refer to Documentation available on website
