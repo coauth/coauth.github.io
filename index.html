@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>CO-Auth - A companion after authentication</title>
+  <title>CO-Auth - The companion after authentication</title>
   <meta
     content="CO-Auth - A Companion post Authentication. Which can be used for any verification / authentication purpose or even as a 2FA or MFA."
     name="description" />
@@ -136,20 +136,14 @@
               MFA / 2FA isn't part of Auth? :P. It's the extension step for verification i.e. authorization. With CO-Auth, plug them anywhere.
             </p>
             <ul>
-              <li>
-                <i class="ri-check-double-line"></i> Time Based OTP (Ready)
-              </li>
+              <li><i class="ri-hourglass-line"></i> Time Based OTP (Work in progress)</li>
+			  <li><i class="ri-hourglass-line"></i> Re-confirm (Work in progress)</li>
               <li><i class="ri-time-line"></i> QR Code scan (Coming soon)</li>
-              <li>
-                <i class="ri-time-line"></i> Dynamic Access Codes (Coming
-                soon)
-              </li>
+              <li><i class="ri-time-line"></i> Dynamic Access Codes (Coming soon)</li>
               <li><i class="ri-time-line"></i> Regular OTP (Coming soon)</li>
               <li><i class="ri-time-line"></i> Whatsapp Link verification (Coming soon)</li>
               <li><i class="ri-time-line"></i> Voice OTP (Coming soon)</li>
-              <li>
-                <i class="ri-time-line"></i> Security questions (Coming soon)
-              </li>
+              <li><i class="ri-time-line"></i> Security questions (Coming soon)</li>
               <li><i class="ri-time-line"></i> App Based verification (Coming soon)</li>
             </ul>
           </div>
@@ -164,7 +158,7 @@
               Platforms supported / planned
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Web Applications (Ready)</li>
+              <li><i class="ri-check-double-line"></i> Web Applications (Work in progress)</li>
               <li><i class="ri-time-line"></i> Desktop / GUI (Windows / Ubuntu / Mac) (Coming soon)</li>
               <li><i class="ri-time-line"></i> Cloud Shell (Coming soon)</li>
             </ul>
@@ -192,10 +186,7 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                      While these protect you with authentication, post auth they dont affirms on certain sensitive
-                      actions.
-                      And thus everyone, instead ends up building their own verification / authorization like OTP,
-                      Security questions, etc.
+                      SSO, SAML, OAuth, and OpenID excel at authentication, but they may lack post-authentication affirmation for sensitive actions. As a result, organizations often build additional verification methods like OTP and security questions to ensure comprehensive security beyond initial login.
                     </p>
                   </div>
                 </li>
@@ -205,9 +196,7 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      While this is a policy, its unfortunate that we knowingly/unknowingly allow access to
-                      authenticated systems to people around us (even riskier with work from home/ anywhere). Even worst
-                      with SSO you are always logged in.
+                      Despite secure password policies, risks persist with shared screens and continuous logged-in sessions, especially in remote work. Organizations need to address these vulnerabilities to prevent unauthorized access effectively.
                     </p>
                   </div>
                 </li>
@@ -218,8 +207,7 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      If your core application passwords were compromised. This layer
-                      separation provides added protection.
+                      Separating authorization factors into distinct systems adds an extra layer of security. If core application passwords are compromised, this segregation helps mitigate the risk and provides additional protection.
                     </p>
                   </div>
                 </li>
@@ -230,8 +218,7 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      If you have more than one application that needs 2FA,
-                      you shouldn't be building 2FA in each system. 
+                      Avoid re-implementing Two-Factor Authentication (2FA) for each system. Instead, use a centralized approach when you have multiple applications requiring 2FA. This streamlines implementation, enhances consistency, and simplifies management.
                     </p>
                   </div>
                 </li>
@@ -242,8 +229,8 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Best practices are important. Not just a functioning
-                      module. Choose a solution which would be widely adopted.
+                      
+Emphasize best practices over just functional modules. Opt for widely adopted solutions and leave it to the experts to ensure robust security measures rather than reinventing the wheel.
                     </p>
                   </div>
                 </li>
@@ -254,9 +241,7 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-6" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Choosing a authorization modules for multiple faces to your end
-                      users is the ideal way. However, CO-Auth allows you
-                      both options. :p
+                      Choosing a unified authorization module is ideal for a seamless user experience. However, with CO-Auth, you have the flexibility to cater to multiple faces.
                     </p>
                   </div>
                 </li>
@@ -266,18 +251,18 @@
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-7" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Switch the auth module if needed without having to rewrite the whole logic. e.x. Why not allow to
-                      access banking codes over mobile app instead of SMS / Email / a TOTP during an international travel?
+                      
+Opt for a pluggable and configurable authentication module that allows you to switch authentication methods without rewriting the entire logic. For instance, enabling access to banking codes via a mobile app instead of SMS, email, or TOTP during international travel. This flexibility enhances user experience and security adaptation.
                     </p>
                   </div>
                 </li>
                 <li>
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-8" class="collapsed"><span>08</span>
-                    Simple, modern but also secure Auth
+                    Simple, modern but also secure 2nd to nth Auth
                     <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-8" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      CO-Auth modules can also be used for simple login authentication like QR Login or Whatsapp Login
+                      CO-Auth modules provide a blend of simplicity, modernity, and security. They can be utilized for various authentication methods, including QR Login or Whatsapp Login (beyond the memory recall password), ensuring a user-friendly yet secure authentication experience.
                     </p>
                   </div>
                 </li>
